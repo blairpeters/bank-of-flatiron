@@ -4,7 +4,6 @@ import React from "react";
 import "../App.css";
 import InputDetails from "./InputDetails";
 import TransactionsTable from "./TransactionsTable";
-import SearchBar from "./SearchBar";
 
 function App() {
   const [count, setCount] = useState(0);
