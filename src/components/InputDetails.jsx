@@ -4,8 +4,9 @@ const InputDetails = () => {
   return (
     <div>
       <div>
-        <form action="" className="mt-20  flex flex-col items-center">
-          <h1 className="mb-5 text-5xl text-white">Bank of Flatiron</h1>
+        <form action="" className="mt-12  flex flex-col items-center">
+          <h1 className="mb-5 text-5xl text-white ">Bank of Flatiron</h1>
+          <h2 className="mt-4 mb-6 text-3xl text-white">Transaction Form</h2>
           <input
             type="text"
             className="bg-gray-500 mb-3 w-96 h-9 rounded "
@@ -34,7 +35,7 @@ const InputDetails = () => {
             required
           />
           <button className="bg-cyan-950 hover:bg-white py-3 px-2 rounded">
-            Submit
+            Add Transaction
           </button>
         </form>
       </div>
