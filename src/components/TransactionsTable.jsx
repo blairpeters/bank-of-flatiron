@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 
 const TransactionsTable = () => {
   const [transactions, setTransactions] = useState([]);
-  const [search, setSearch] = useState([]);
+  const [search, setSearch] = useState("");
   console.log(search);
   useEffect(() => {
     fetch("http://localhost:3000/transactions")
@@ -12,15 +12,18 @@ const TransactionsTable = () => {
   }, []);
   return (
     <div>
+      <h2 className="flex flex-col items-center mt-4 text-3xl text-white">
+        Transactions
+      </h2>
       <form
         action=""
-        className="mt-20  flex flex-col items-center"
+        className="mt-12  flex flex-col items-center"
         onChange={(e) => setSearch(e.target.value)}
       >
         <input
           type="text"
           className="bg-gray-500 mb-3 w-96 h-9 rounded "
-          placeholder="search category..."
+          placeholder="Search transaction by description..."
           name="search"
           required
         />
@@ -40,7 +43,7 @@ const TransactionsTable = () => {
               .filter((td) => {
                 return search.toLowerCase() === ""
                   ? td
-                  : td.category.toLowerCase().includes(search);
+                  : td.description.toLowerCase().includes(search);
               })
               .map((td, index) => (
                 <tr key={index}>
