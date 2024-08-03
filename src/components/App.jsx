@@ -1,4 +1,5 @@
 import { useState } from "react";
+import React from "react";
 
 import "../App.css";
 import InputDetails from "./InputDetails";
@@ -8,7 +9,7 @@ function App() {
   const [count, setCount] = useState(0);
 
   return (
-    <div>
+    <div className="bg-gray-900">
       <InputDetails />
       <TransactionsTable />
     </div>
