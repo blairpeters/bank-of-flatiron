@@ -9,7 +9,7 @@ const InputDetails = () => {
           <input
             type="text"
             className="bg-gray-500 mb-3 w-96 h-9 rounded "
-            placeholder="Payment Description..."
+            placeholder="Payment Description"
           />
           <input
             type="text"
