@@ -4,6 +4,7 @@ import React from "react";
 import "../App.css";
 import InputDetails from "./InputDetails";
 import TransactionsTable from "./TransactionsTable";
+import SearchBar from "./SearchBar";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -11,6 +12,7 @@ function App() {
   return (
     <div className="bg-gray-900">
       <InputDetails />
+
       <TransactionsTable />
     </div>
   );
