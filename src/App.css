@@ -1,0 +1,15 @@
+/* This CSS assumes Tailwind CSS is properly imported into your project */
+
+.scroll-section {
+  height: 100vh; /* Full viewport height for each section */
+  position: relative;
+  overflow: hidden;
+}
+
+.scroll-section.in-view img:first-child {
+  opacity: 0; /* Fade out the first image */
+}
+
+.scroll-section.in-view img:last-child {
+  opacity: 1; /* Fade in the second image */
+}
