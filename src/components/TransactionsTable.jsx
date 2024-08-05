@@ -5,7 +5,7 @@ const TransactionsTable = () => {
   const [search, setSearch] = useState("");
   console.log(search);
   useEffect(() => {
-    fetch("http://localhost:3000/transactions")
+    fetch("https://bank-of-flatiron-database.vercel.app/transactions")
       .then((response) => response.json())
       .then((data) => setTransactions(data))
       .catch((err) => console.log(err));
