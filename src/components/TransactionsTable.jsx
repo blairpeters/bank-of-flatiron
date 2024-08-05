@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import TableHeader from "./TableHeader";
 import TableData from "./TableData";
+import InputDetails from "./InputDetails";
 
 const TransactionsTable = () => {
   const [transactions, setTransactions] = useState([]);
@@ -15,6 +16,12 @@ const TransactionsTable = () => {
   }, []);
   return (
     <div>
+      <div>
+        <InputDetails
+          transactions={transactions}
+          setTransactions={setTransactions}
+        />
+      </div>
       <h2 className="flex flex-col items-center mt-4 text-3xl text-white">
         Transactions
       </h2>
@@ -42,7 +49,9 @@ const TransactionsTable = () => {
                 .filter((td) => {
                   return search.toLowerCase() === ""
                     ? td
-                    : td.description.toLowerCase().includes(search);
+                    : td.description
+                        .toLowerCase()
+                        .includes(search.toLowerCase());
                 })
                 .map((td, index) => (
                   <TableData key={index} td={td} />
