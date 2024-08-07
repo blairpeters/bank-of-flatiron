@@ -125,6 +125,13 @@
       "category": "",
       "amount": "",
       "date": ""
+    },
+    {
+      "id": "7d91",
+      "description": "payment from chicken business",
+      "category": "salary",
+      "amount": "1000",
+      "date": "2024-07-31"
     }
   ]
 }

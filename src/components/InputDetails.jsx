@@ -20,7 +20,7 @@ const InputDetails = ({ transactions, setTransactions }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    fetch("http://localhost:3000/users", {
+    fetch("https://bank-of-flatiron-database.vercel.app/transactions", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
