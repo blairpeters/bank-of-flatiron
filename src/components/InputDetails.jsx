@@ -20,6 +20,7 @@ const InputDetails = ({ transactions, setTransactions }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
     fetch("https://bank-of-flatiron-database.vercel.app/transactions", {
       method: "POST",
       headers: {
@@ -30,6 +31,7 @@ const InputDetails = ({ transactions, setTransactions }) => {
     })
       .then((res) => res.json())
       .then((transaction) => setTransactions([transaction, ...transactions]));
+
     setFormData({
       description: "",
       category: "",
@@ -37,6 +39,7 @@ const InputDetails = ({ transactions, setTransactions }) => {
       date: "",
     });
   };
+
   return (
     <div>
       <div>
