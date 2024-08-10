@@ -37,5 +37,5 @@ server: (https://bank-of-flatiron-database.vercel.app/transactions)
 
 ## Contributors
 
-- [Bob Oyier] (https://github.com/oyieroyier) (Bug fixes)
-- [Titus Ouko] (https://github.com/costamay) (Bug fixes)
+- [Bob Oyier](https://github.com/oyieroyier) (Bug fixes)
+- [Titus Ouko](https://github.com/costamay) (Bug fixes)
